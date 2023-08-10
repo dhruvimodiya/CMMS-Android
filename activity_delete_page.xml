@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".complain_page">
+
+    <TextView
+        android:id="@+id/txthome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="404.SOLUTION"
+        android:textColor="@color/black"
+        android:textSize="34dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.043"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/complainbox"
+        android:layout_width="226dp"
+        android:layout_height="45dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:text="Update Complain!! "
+        android:textAllCaps="true"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txthome"
+        app:layout_constraintVertical_bias="0.052" />
+
+    <ImageButton
+        android:id="@+id/close"
+        android:layout_width="70dp"
+        android:layout_height="56dp"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/txthome"
+        android:src="@drawable/baseline_close_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.994"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <LinearLayout
+        android:layout_width="388dp"
+        android:layout_height="750dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="3dp"
+        android:background="@color/purple_200"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/complainbox">
+
+        <TextView
+            android:layout_width="311dp"
+            android:layout_height="52dp"
+            android:text="Please Put your Device ID:"
+            android:layout_margin="15dp"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/txtdeviceid"
+            android:layout_width="233dp"
+            android:layout_height="48dp"
+            android:layout_margin="10dp"
+            android:hint="Enter Device Id " />
+
+
+        <Button
+            android:id="@+id/btnsubmitcomplain"
+            android:layout_width="match_parent"
+            android:layout_margin="20dp"
+            android:layout_height="60dp"
+            android:text="delete the complain" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
